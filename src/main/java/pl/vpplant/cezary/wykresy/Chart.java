@@ -4,11 +4,8 @@ import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartFrame;
 import org.jfree.chart.JFreeChart;
 import org.jfree.data.general.DefaultPieDataset;
-import org.jfree.data.xy.XYDataset;
-import org.jfree.data.xy.XYSeries;
-import org.jfree.data.xy.XYSeriesCollection;
-import org.jfree.ui.RefineryUtilities;
 import java.sql.*;
+
 import java.util.Scanner;
 
 public class Chart {
@@ -20,35 +17,19 @@ public class Chart {
         ResultSet resultSet = getResultSet(connect);
 
         DefaultPieDataset dataset = getDefaultPieDataset(resultSet);
-        System.out.println(dataset);
+//      System.out.println(dataset);
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("\nWybierz czujniki z powyższych i wpisz 2 do porównania? ");
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("\nWybierz serię czujników z wymienionych i wpisz? ");
+//        String sensor = scanner.next();
+//        System.out.println("podałeś - "+ sensor);
 
-        String sensor = scanner.next();
 
-        System.out.println("podałeś - "+ sensor);
 
         JFreeChart chart = getjFreeChart(dataset);
+        setVisible(chart);
 
-        //setVisible(chart);
 
-//--------XYSeries--------------------------------------------------------------------------------------------------------
-
-       final XYSeries CO2 = new XYSeries(sensor);
-       int x=1;
-       while(resultSet.next()){
-           CO2.add(x++, Double.parseDouble(resultSet.getString("last_value")));
-
-       }
-        XYSeriesCollection dataset2 = new XYSeriesCollection();
-        dataset2.addSeries(CO2);
-
-       XYLineChart_AWT wyk = new XYLineChart_AWT("Browser Usage Statistics",
-               "Which Browser are you using?", dataset2 );
-       wyk.pack();
-       RefineryUtilities.centerFrameOnScreen(wyk);
-       wyk.setVisible(true);
     }
 
     private static void setVisible(JFreeChart chart) {
@@ -79,15 +60,36 @@ public class Chart {
                     resultSet.getString("char_id"),
                     Double.parseDouble(resultSet.getString("last_value")));
 
-        //System.out.println(resultSet.getString("char_id")+" - "+resultSet.getString("last_value")+" - " +resultSet.getString("last_change"));
+        System.out.println(resultSet.getString("char_id")+" - "+resultSet.getString("last_value")+" - " +resultSet.getString("last_change"));
+
+
         }
         return dataset;
+
     }
 
 
     private static ResultSet getResultSet(Connection connect) throws SQLException {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\nWybierz serię czujników z wymienionych i wpisz? ");
+
+        String sensor = scanner.next();
+        //System.out.println("podałeś - "+ sensor);
+
+
         Statement statement = connect.createStatement();
-        return statement.executeQuery("select * from data_series");
+        switch (sensor) {
+            case "temp":
+                return statement.executeQuery("SELECT * FROM data_series WHERE char_id LIKE '%temp%'");
+            case "CO2":
+                return statement.executeQuery("SELECT * FROM data_series WHERE char_id LIKE '%CO2%'");
+            case "rh":
+                return statement.executeQuery("SELECT * FROM data_series WHERE char_id LIKE '%rh%'");
+                default:
+                    return statement.executeQuery("SELECT * FROM data_series");
+        }
+
     }
 
 
