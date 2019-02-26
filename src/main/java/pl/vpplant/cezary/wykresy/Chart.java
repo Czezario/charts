@@ -5,7 +5,8 @@ import org.jfree.chart.ChartFrame;
 import org.jfree.chart.JFreeChart;
 import org.jfree.data.general.DefaultPieDataset;
 import java.sql.*;
-
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Chart {
@@ -17,18 +18,9 @@ public class Chart {
         ResultSet resultSet = getResultSet(connect);
 
         DefaultPieDataset dataset = getDefaultPieDataset(resultSet);
-//      System.out.println(dataset);
-
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("\nWybierz serię czujników z wymienionych i wpisz? ");
-//        String sensor = scanner.next();
-//        System.out.println("podałeś - "+ sensor);
-
-
 
         JFreeChart chart = getjFreeChart(dataset);
         setVisible(chart);
-
 
     }
 
@@ -62,21 +54,28 @@ public class Chart {
 
         System.out.println(resultSet.getString("char_id")+" - "+resultSet.getString("last_value")+" - " +resultSet.getString("last_change"));
 
-
         }
         return dataset;
-
     }
-
 
     private static ResultSet getResultSet(Connection connect) throws SQLException {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("\nWybierz serię czujników z wymienionych i wpisz? ");
+        System.out.println("\nWybierz serię czujników - podaj liczbę (od 1 do 4) \n");
 
-        String sensor = scanner.next();
-        //System.out.println("podałeś - "+ sensor);
+        Map<Integer, String> wybor = new HashMap<>();
+        wybor.put(1, "temp");
+        wybor.put(2,"CO2");
+        wybor.put(3,"rh");
+        wybor.put(4, "Wszystkie czujniki" );
 
+        System.out.println(wybor);
+
+        int liczba = scanner.nextInt();
+        System.out.println("\n"+wybor.get(liczba));
+        String sensor = wybor.get(liczba);
+
+        System.out.println("podałeś - "+ sensor);
 
         Statement statement = connect.createStatement();
         switch (sensor) {
@@ -89,9 +88,7 @@ public class Chart {
                 default:
                     return statement.executeQuery("SELECT * FROM data_series");
         }
-
     }
-
 
     private static Connection getConnection() throws ClassNotFoundException, SQLException {
         /* Create MySQL Database Connection */

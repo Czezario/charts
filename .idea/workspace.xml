@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="89c21176-352f-48bc-8dea-8bd6cf01dad8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/vpplant/cezary/wykresy/Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/vpplant/cezary/wykresy/Chart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/vpplant/cezary/wykresy/XYLineChart_AWT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/wykresy.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/vpplant/cezary/wykresy/Chart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/vpplant/cezary/wykresy/Chart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/vpplant/cezary/wykresy/XYLineChart_AWT.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,11 +43,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/vpplant/cezary/wykresy/Chart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
+            <state relative-caret-position="169">
+              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_1.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -66,6 +73,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GroovyConsoleState">
+    <option name="list">
+      <list>
+        <Entry>
+          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy" />
+          <option name="moduleName" value="wykresy" />
+          <option name="title" value="wykresy (Bundled Groovy 2.4.15)" />
+        </Entry>
+        <Entry>
+          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_1.groovy" />
+          <option name="moduleName" value="wykresy" />
+          <option name="title" value="wykresy (Bundled Groovy 2.4.15)" />
+        </Entry>
+      </list>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -73,6 +96,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/chart.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/pl/vpplant/cezary/wykresy/XYLineChart_AWT.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_1.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/pl/vpplant/cezary/wykresy/Chart.java" />
       </list>
     </option>
@@ -95,96 +120,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="wykresy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wykresy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wykresy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wykresy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wykresy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wykresy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wykresy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wykresy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wykresy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wykresy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wykresy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wykresy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="vpplant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wykresy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wykresy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="vpplant" type="462c0819:PsiDirectoryNode" />
-              <item name="cezary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wykresy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wykresy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="vpplant" type="462c0819:PsiDirectoryNode" />
-              <item name="cezary" type="462c0819:PsiDirectoryNode" />
-              <item name="wykresy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wykresy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wykresy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="vpplant" type="462c0819:PsiDirectoryNode" />
-              <item name="cezary" type="462c0819:PsiDirectoryNode" />
-              <item name="wykresy" type="462c0819:PsiDirectoryNode" />
-              <item name="Chart" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="wykresy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wykresy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -244,12 +180,12 @@
       <workItem from="1551104894492" duration="10848000" />
       <workItem from="1551127910644" duration="1124000" />
       <workItem from="1551168862356" duration="13707000" />
-      <workItem from="1551191365987" duration="621000" />
+      <workItem from="1551191365987" duration="4095000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30334000" />
+    <option name="totallyTimeSpent" value="33808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="25" width="1327" height="743" extended-state="6" />
@@ -299,10 +235,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_1.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/vpplant/cezary/wykresy/Chart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
+        <state relative-caret-position="169">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
